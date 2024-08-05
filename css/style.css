@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-position: center center;
+  background-size: cover;
+  user-select: none;
+  outline-color: tomato;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.hero_section {
+  background: url('../images/hero-bg-2.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
