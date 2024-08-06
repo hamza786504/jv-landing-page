@@ -33,8 +33,7 @@
 
 <body>
 
-  <div
-    class="searchPanel hidden transition-opacity duration-3 opacity-100 p-7 z-50 bg-white fixed top-0 left-0 w-screen h-screen"
+  <div class="searchPanel hidden transition-opacity duration-3 opacity-100 p-7 bg-white fixed top-0 left-0 w-screen h-screen" style="z-index: 1000;"
     id="searchPanel">
     <div class="flex border-2 border-[#F06522] overflow-hidden max-w-md mx-auto">
       <input type="text" placeholder="Search Something..."
@@ -57,7 +56,7 @@
   </div>
 
 
-  <section class="hero_section relative px-2 relative w-full bg-cover bg-center">
+  <section class="hero_section relative px-2 relative w-full bg-cover bg-center" id="hero_section">
     <div class="absolute hidden md:flex flex-col space-y-4 top-1/2 left-[4vw] -translate-y-1/2 -translate-x-1/2">
       <a href="https://www.facebook.com"
         class="hover:bg-white hover:text-primary wow animate__animated animate__fadeInLeft text-xs text-white rounded-full h-[35px] w-[35px] inline-flex items-center justify-center border"
@@ -78,8 +77,8 @@
     <div class="border-white md:border container min-h-screen md:max-w-[85%] mx-auto">
       <header class="flex px-7 mx-auto tracking-wide relative">
         <div class="flex flex-wrap items-center justify-between gap-5 w-full">
-          <a href="/">
-            <img src="./images/logo.jpg" alt="logo" class="mx-auto w-24">
+          <a href="#hero_section">
+            <img src="./images/logo.png" alt="logo" class="mx-auto w-24">
           </a>
           <div id="collapseMenu"
             class="hidden flex-1 lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
@@ -97,19 +96,21 @@
             <ul
               class="lg:flex gap-x-1 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50 justify-end md:items-center">
               <li class="mb-6 hidden max-lg:block">
-                <a href="/"><img src="./images/logo.jpg" alt="logo" class="w-24">
+                <a href="#hero_section"><img src="./images/logo.png" alt="logo" class="w-24">
                 </a>
               </li>
               <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3">
-                <a href="/" class="hover:text-primary text-primary block font-semibold text-[15px]">How It
-                  Works</a>
+                <a href="#" class="hover:text-primary text-primary block font-semibold text-[15px]">Home</a>
               </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3"><a href="/"
-                  class="hover:text-primary md:text-white text-black block font-semibold text-[15px]">Loans</a>
+              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3"><a href="#about"
+                  class="hover:text-primary md:text-white text-black block font-semibold text-[15px]">About Us</a>
               </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3"><a href="/"
-                  class="hover:text-primary md:text-white text-black block font-semibold text-[15px]">Pricing</a>
+              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3"><a href="#services"
+                  class="hover:text-primary md:text-white text-black block font-semibold text-[15px]">Services</a>
               </li>
+              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3"><a href="#contact"
+                class="hover:text-primary md:text-white text-black block font-semibold text-[15px]">Contact</a>
+            </li>
               <li class="max-lg:border-b border-white max-lg:py-3 px-0 lg:px-3">
                 <a href="#" id="openSearchPanelButton"
                   class="border hover:bg-white hover:text-base rounded-full w-[35px] h-[35px] flex items-center justify-center hover:text-primary md:text-white text-black block font-semibold text-[12px]">
@@ -154,7 +155,7 @@
 
 
 
-  <section class=" md:max-w-[85%] mx-auto  px-2 relative w-full bg-cover bg-center">
+  <section class="md:max-w-[85%] mx-auto  px-2 relative w-full bg-cover bg-center" id="about">
     <div class="border-white md:border container min-h-screen md:max-w-[85%] mx-auto">
       <div
         class="mx-auto px-0 relative pt-3 mb-20 flex flex-col lg:flex-row justify-center lg:justify-between items-center">
@@ -264,7 +265,7 @@
 
 
 
-  <section class="py-16">
+  <section class="py-16"  id="services">
     <div class="md:max-w-[85%] mx-auto px-4">
       <div class="flex flex-nowrap flex-col lg:flex-row ">
         <div data-wow-delay="0.5s" class="w-full wow animate__ animate__fadeInUp lg:w-1/2 pe-0 lg:pe-10 animated"
@@ -357,19 +358,19 @@
           style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
           <div class="flex items-center justify-start flex-col">
             <div class="w-full flex items-start">
-              <div class="w-1/4">
-                <i class="text-primary text-3xl md:text-5xl fa-solid mt-4 fa-cloud"></i>
+              <div>
+                <i class="text-primary text-3xl sm:text-5xl fa-solid mt-4 fa-cloud"></i>
               </div>
-              <div class="w-3/4">
+              <div class="flex-1 ps-4">
                 <h2 class="text-6xl mb-3 text-primary font-semibold">30%</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum.</p>
               </div>
             </div>
             <div class="w-full flex items-start mt-10">
-              <div class="w-1/4">
-                <i class="text-primary text-5xl fa-solid mt-4 fa-cloud"></i>
+              <div>
+                <i class="text-primary text-3xl sm:text-5xl fa-solid mt-4 fa-cloud"></i>
               </div>
-              <div class="w-3/4">
+              <div class="flex-1 ps-4">
                 <h2 class="text-6xl mb-3 text-primary font-semibold">50%</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, rerum.</p>
               </div>
@@ -400,7 +401,7 @@
   </section>
 
 
-  <section class="pt-10">
+  <section class="pt-10" id="contact">
     <div class="flex flex-col md:flex-row items-center justify-between">
       <div class="w-1/2">
         <form class="mx-auto max-w-[450px] space-y-4">

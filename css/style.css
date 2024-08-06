@@ -23,3 +23,9 @@ li {
   background-position: bottom;
   background-size: cover;
 }
+
+
+
+*{
+  scroll-behavior: smooth;
+}
