@@ -32,3 +32,37 @@ document.getElementById("closeSearchPanel").addEventListener("click", function()
 });
 
 
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+    const hamburgerIcon = document.querySelector('header #toggleOpen svg');
+    const goToTopButton = document.getElementById('goToTop');
+
+    function handleScroll() {
+        if (window.scrollY > 0) {
+          header.classList.add('header-invert');
+          hamburgerIcon.classList.add('hamburger-invert');
+          goToTopButton.classList.remove('hidden');
+        } else {
+          header.classList.remove('header-invert');
+          hamburgerIcon.classList.remove('hamburger-invert');
+          goToTopButton.classList.add('hidden');
+        }
+
+    }
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Attach resize event listener to handle screen size changes
+    window.addEventListener('resize', handleScroll);
+
+    // Initial check
+    handleScroll();
+
+
+
+    
+  });

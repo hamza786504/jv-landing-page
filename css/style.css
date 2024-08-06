@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
   padding: 0;
   border: 0;
   background-position: center center;
   background-size: cover;
   user-select: none;
-  outline-color: tomato;
 }
 body {
   overflow-x: hidden;
@@ -27,5 +27,23 @@ li {
 
 
 *{
-  scroll-behavior: smooth;
+}
+
+/* Add this to your CSS file */
+.header-invert {
+  color: black; /* Invert text color when the header is scrolled */
+  background-color: white;
+}
+
+.header-invert a {
+  color: black; /* Invert link color when header is scrolled */
+}
+
+.header-invert #toggleOpen svg{
+  color: black;
+}
+
+/* CSS for hamburger icon inversion */
+.hamburger-invert {
+  fill: black; /* Change to black when scrolled */
 }
